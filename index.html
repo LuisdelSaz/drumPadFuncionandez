@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Pad</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <header>
+    <h1>AKAI</h1>
+    <h2>MPC-II</h2>
+    <p>by RosGuiRu-is</p>
+  </header>
+  <body>
+    <div class="container">
+      <button class="drum-pad" data-sound="crash.wav">crash</button>
+      <button class="drum-pad" data-sound="hihat-close.wav">hat-close</button>
+      <button class="drum-pad" data-sound="hihat-open.wav">hat-open</button>
+      <button class="drum-pad" data-sound="kick.wav">kick</button>
+      <button class="drum-pad" data-sound="ride.wav">ride</button>
+      <button class="drum-pad" data-sound="snare.wav">snare</button>
+      <button class="drum-pad" data-sound="tom-high.wav">tom-high</button>
+      <button class="drum-pad" data-sound="tom-low.wav">tom-low</button>
+      <button class="drum-pad" data-sound="tom-mid.wav">tom-mid</button>
+    </div>
+
+    <!-- contenedor ross -->
+    <div id="nuevoContenedor"></div>
+
+    <div class="contenedorPantalla">
+      <div class="contenidoPantalla">
+        <!-- <p>Ross, Guille, Ruth, Luis</p> -->
+      </div>
+    </div>
+
+    <div class="small-buttons-container">
+      <button class="small-drum-pad" id="record">🔴 Rec</button>
+      <button class="small-drum-pad">▶️ Play</button>
+      <button class="small-drum-pad">⏹️ Stop</button>
+    </div>
+
+    <!-- control de volumen -->
+    <input
+      id="volume-slider"
+      type="range"
+      min="0"
+      max="1"
+      step="0.01"
+      value="1"
+    />
+
+    <button class="round-button"></button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
